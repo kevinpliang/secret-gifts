@@ -12,88 +12,83 @@
 			padding: 0;
 			margin: 0;
 		}
+
 		h1 {
-			font-family:'Lobster', cursive;
+			font-family: 'Lobster', cursive;
 		}
-		#top-bar {
-				font-family: 'Lobster', cursive;
-				font-size: 180%;
-				background-color: rgb(152, 24, 24);
-				margin: 0 auto;
-				padding: 0, auto;
-				position: fixed;
-				width: 100%;
-				height: 40px;
-		}
-
-		#name {
-			position:fixed;
-			left:30px;
-			top:335px;
-			width:200px;
-			border:hidden
-		}
-
-
 		#profilePic {
-			position: relative;
-			right: 100px;
-
-
-
+			position:relative;
+			margin: 10px 10px 10px 10px;
+			float:left;
 		}
 
-		#interests{
-			position:relative;
-			left: 100px;
-			font-family: 'Roboto', sans-serif;
+		#top-bar {
+			font-family: 'Lobster', cursive;
 			font-size: 180%;
+			background-color: rgb(152, 24, 24);
+			margin: 0 auto;
+			padding: 0, auto;
+			position: fixed;
+			width: 100%;
+			height: 40px;
+		}
+
+		#info {
+			position: relative;
+			left: 30px;
+			top: 335px;
+			width: 200px;
+			border: hidden;
+			float:left;
+		}
+
+		#interests {
+			position: relative;
+			float:left;
+		}
+
+		p {
+			font-family: 'Roboto', sans-serif;
 		}
 
 		a {
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-    a:link {
-        color: white;
-    }
-    a:visited {
-        color: white;
-    }
+			text-decoration: none;
+		}
 
+		a:hover {
+			text-decoration: underline;
+		}
+
+		a:link {
+			color: white;
+		}
+
+		a:visited {
+			color: white;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="top-bar">
-			<a href="index.html">Secret Gifts</a>
+		<a href="index.html">Secret Gifts</a>
 	</div>
 
 	<div class="profilePic">
-		<img id="face" src="kevin.jpg" alt="Sample image" width=200px; height=300px; >
+		<img id="face" src="images/henry-owens.png" alt="Sample image" width=230px; height=300px;>
+	</div>
+	<h1> Information</h1>
+	<div class="info">
+
+		<p> <b>Name: </b>Henry Owens </p>
+		<p> <b>Member Since: </b> 2016 </p>
+		<p> <b>Residence: </b> Fairfax, Virginia </p>
+
 	</div>
 
+	<h1>Interests</h1>
 
-
-	<div class="name">
-		My name is Kevin!
-
-	</div>
-	<div class="years">
-		I've been a member since 2016!
-	</div>
-
-	<div class="country">
-		I live in the US!
-	</div>
-
-		<h1>Interests</h1>
-
-	<div id = "interests" class = "info">
-
-
+	<div id="interests" class="info">
 		<p>
 			Kevin's interests include: cross-country, coding, debate and video games!
 		</p>
