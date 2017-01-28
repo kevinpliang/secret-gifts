@@ -5,10 +5,24 @@
     <title> Secret Gifts </title>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
     <style type="text/css">
+
         body {
             background-image: url("images/gifts-pic.jpg");
             background-color: #cccccc;
             background-size: cover;
+            padding: 0;
+            margin: 0;
+        }
+        #top-bar {
+            font-family: 'Lobster', cursive;
+            font-size: 180%;
+            background-color: rgb(152, 24, 24);
+            margin: 0 auto;
+            padding: 0, auto;
+            position: fixed;
+            width:100%;
+            height: 40px;
+
         }
 
         #title-logo {
@@ -16,20 +30,18 @@
             text-align: center;
             font-size: 500%;
         }
-
         #ribbon {
             font-family: 'Roboto', sans-serif;
             font-size: 25%;
             position: relative;
             top: -60px;
         }
-
         #button-wrapper {
             position: absolute;
             height: 200px;
             width: 400px;
             margin: 60px 0 0 -150px;
-            top: 55%;
+            top: 50%;
             left: 50%;
             overflow: hidden;
         }
@@ -74,7 +86,10 @@
 </head>
 
 <body>
-    <br /> <br /> <br /> <br /> <br /> <br />
+    <div id="top-bar">
+      Secret Gifts
+    </div>
+    <br /> <br /> <br /> <br /> <br />
     <div id="title-logo">
         <p>Secret Gifts</p>
 
@@ -87,7 +102,7 @@
 
     <div id="button-wrapper">
         <div id="signup-box">
-            <p> <a href = "https://google.com">SIGN UP</a></p>
+            <p> <a href = "signUpPage.html">SIGN UP</a></p>
         </div>
         <div id="login-box">
             <p> <a href = "https://google.com">LOGIN</a></p>

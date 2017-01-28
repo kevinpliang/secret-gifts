@@ -3,57 +3,61 @@
 
 <head>
     <title>Secret Gifts - Sign Up</title>
-    <!--
-    <style type="html/css">
-        label{ display:inline-block; width:200px; margin-right:30px; text-align:right; } input { } fieldset{ border:none; width:500px; margin:0px auto; }
-    </style>
-  -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+    <style type="text/css">
 
+        body {
+            background-image: url("images/gifts-pic.jpg");
+            background-color: #cccccc;
+            background-size: cover;
+        }
+        td {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+        }
+        #submit-button {
+            margin-left: 50%;
+        }
+    </style>
 </head>
 
 <body>
     <h1> Sign Up </h1>
+    <form name = input action = "handle_form.php" method = "post">
     <table>
 
         <th>
             <tr>
                 <td>First Name:</td>
-                <td><input type="TEXT" id=fName name="firstname" /></td>
+                <td><input type="TEXT" name="firstname" /></td>
             </tr>
         </th>
         <tr>
             <td>Last Name:</td>
-            <td><input type="TEXT" id=lName name="lastname" /></td>
+            <td><input type="TEXT" name="lastname" /></td>
         </tr>
         <tr>
             <td>Email:</td>
-            <td>  <input type="TEXT" id=email name="email" /></td>
-            <p>
-
-            </p>
+            <td> <input type="TEXT" name="email" /></td>
         </tr>
         <tr>
-          <td>Password:</td>
-          <td><input type = "password" id = password name = "password" / /></td>
+            <td>Password:</td>
+            <td><input type="password" name="password" / /></td>
         </tr>
-
+        <tr>
+            <td>Interests:</td>
+            <td><textarea name="love" cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <div id = "submit-button">
+            <td><input type = "submit" value = "Create account!" /></td>
+            </div>
+        </tr>
     </table>
-    <!--
-    <div>
-        <form signUp=m yProfile.html>
-            <label for="fName">First Name:</label>
-            <input type="TEXT" id=f Name name="firstname" />
-            <br /><br />
-            <label for="lName">Last Name</label>
-            <input type="TEXT" id=l Name name="lastname" />
-            <br /><br />
-            <label for="email">Email</label>
-            <input type="TEXT" id=e mail name="email" />
-
-        </form>
-
-    </div>
-  -->
+</form>
 </body>
 
 </html>
