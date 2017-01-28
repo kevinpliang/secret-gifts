@@ -2,10 +2,31 @@
 <html>
 
 <head>
-	<title> Profile - Kevin Liang</title>
-
+	<title>Secret Gifts - Profile - Kevin Liang</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 	<style type="text/css">
-		.name {
+		body {
+			background-image: url("images/gifts-pic.jpg");
+			background-color: #cccccc;
+			background-size: cover;
+			padding: 0;
+			margin: 0;
+		}
+		h1 {
+			font-family:'Lobster', cursive;
+		}
+		#top-bar {
+				font-family: 'Lobster', cursive;
+				font-size: 180%;
+				background-color: rgb(152, 24, 24);
+				margin: 0 auto;
+				padding: 0, auto;
+				position: fixed;
+				width: 100%;
+				height: 40px;
+		}
+
+		#name {
 			position:fixed;
 			left:30px;
 			top:335px;
@@ -13,52 +34,48 @@
 			border:hidden
 		}
 
-		.years {
-			position:fixed;
-			left:30px;
-			top:365px;
-			width:200px;
-			border:hidden
-		}
 
-		.country {
-			position:fixed;
-			left:30px;
-			top:395px;
-			width:100px;
-			border:hidden
+		#profilePic {
+			position: relative;
+			right: 100px;
+
+
 
 		}
 
-		.profilePic {
-			margin-left: 25px;
-			margin-top: 30px;
+		#interests{
+			position:relative;
+			left: 100px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 180%;
 		}
 
-		.about {
-			position:fixed;
-			left: 25%;
-			top: 5%;
-		}
-		.interests{
-			position:fixed;
-			left: 25%;
-			top: 20%;
-		}
-
-		.giftLinks{
-			position:fixed;
-			left: 25%;
-			top: 40%;
-		}
+		a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:link {
+        color: white;
+    }
+    a:visited {
+        color: white;
+    }
 
 	</style>
 </head>
 
 <body>
-	<div class="profilePic">
-		<img id="face" src="kevin.jpg" alt="Sample image" width=200px;height=200px>
+	<div id="top-bar">
+			<a href="index.html">Secret Gifts</a>
 	</div>
+
+	<div class="profilePic">
+		<img id="face" src="kevin.jpg" alt="Sample image" width=200px; height=300px; >
+	</div>
+
+
 
 	<div class="name">
 		My name is Kevin!
@@ -72,39 +89,16 @@
 		I live in the US!
 	</div>
 
-	<div id = "about" class = "info">
-		<h1>About</h1>
-		<p>
-			Kevin is 15 years old and loves himself more than anything in the world
-		</p>
-	</div>
+		<h1>Interests</h1>
 
 	<div id = "interests" class = "info">
 
-		<h1>Interests</h1>
+
 		<p>
 			Kevin's interests include: cross-country, coding, debate and video games!
 		</p>
 	</div>
 
-	<div id = "giftLinks" class = "info">
 
-		<h1>Gift Links</h1>
-		<p>
-			Here are osme links for gifts that Kevin wants:
-		</p>
-	</div>
-
-	<ul class = "information">
-		<l1><a onclick = openInfo('About')>About</a></l1>
-		<l2><a onclick = openInfo('Interests')>Interests</a></l2>
-		<l3><a onclick = openInfo('Gift Links')>Gift Links</a></l3>
-	</ul>
-
-	function(openInfo)
-	{
-
-
-	}
 </body>
 </html
