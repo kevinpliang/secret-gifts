@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Secret Gifts - Profile - Kevin Liang</title>
+	<title>Global Gifts- Profile - Kevin Liang</title>
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 	<style type="text/css">
 		body {
@@ -16,10 +16,12 @@
 		h1 {
 			font-family: 'Lobster', cursive;
 		}
+
 		#profilePic {
-			position:relative;
+			position: relative;
+			margin-top: 40px;
 			margin: 10px 10px 10px 10px;
-			float:left;
+			float: left;
 		}
 
 		#top-bar {
@@ -34,17 +36,16 @@
 		}
 
 		#info {
+			background: linear-gradient( rgba(255, 218, 218, 0.5), rgba(255, 218, 218, 0.5));
 			position: relative;
-			left: 30px;
-			top: 335px;
-			width: 200px;
-			border: hidden;
-			float:left;
+			float: left;
 		}
 
 		#interests {
+			background: linear-gradient( rgba(255, 218, 218, 0.5), rgba(255, 218, 218, 0.5));
+			margin-left: 20px;
 			position: relative;
-			float:left;
+			float: left;
 		}
 
 		p {
@@ -66,19 +67,67 @@
 		a:visited {
 			color: white;
 		}
+
+		#start-gift {
+			text-align: right;
+			padding-right: 30px;
+		}
+
+		#karma {
+			text-align: left;
+			float: left;
+			position: fixed;
+			margin-left: 250px;
+		}
+
+		#vote {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		i {
+			font-family: 'Lobster', cursive;
+			font-size: 200%;
+		}
 	</style>
+
+	<script>
+	function rps() {
+	var computerScore = document.getElementById('computerScore');
+	var number = computerScore.innerHTML;
+	number++;
+	computerScore.innerHTML = number;
+}
+function rpt() {
+var computerScore = document.getElementById('computerScore');
+var number = computerScore.innerHTML;
+number--;
+computerScore.innerHTML = number;
+}
+	</script>
+
 </head>
 
 <body>
 	<div id="top-bar">
-		<a href="index.html">Secret Gifts</a>
+		<a href="index.html">Global Gifts</a>
+	</div>
+
+	<div id="karma">
+		<br />
+		<br />
+		<br />
+		<i>Karma:</i><p id="computerScore">1000</p>
+		<div id="vote">
+			<button onclick="rps()">Upvote</button>
+			<button onclick="rpt()">Downvote</button>
+		</div>
 	</div>
 
 	<div class="profilePic">
 		<img id="face" src="images/henry-owens.png" alt="Sample image" width=230px; height=300px;>
 	</div>
 	<h1> Information</h1>
-	<div class="info">
+	<div id="info">
 
 		<p> <b>Name: </b>Henry Owens </p>
 		<p> <b>Member Since: </b> 2016 </p>
@@ -86,13 +135,23 @@
 
 	</div>
 
-	<h1>Interests</h1>
+	<h1>&nbsp&nbsp&nbspInterests</h1>
 
-	<div id="interests" class="info">
-		<p>
-			Kevin's interests include: cross-country, coding, debate and video games!
-		</p>
+	<div id="interests">
+		<p> Running, Coding, and Gaming </p>
 	</div>
+
+	<div id="start-gift">
+		<form name=input action="getMatched.html">
+			<input type="submit" value="Start Gifting!" style="width:100px; height:50px;" />
+		</form>
+	</div>
+
+	<br />
+
+
+
+
 
 
 </body>
