@@ -1,2 +1,2 @@
 # secret-gifts
-# hack jmhs 
+static website created for hack jmhs 
